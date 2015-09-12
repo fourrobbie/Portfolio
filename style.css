@@ -1,3 +1,56 @@
-body{ background-color:
-    wheat
+body{
+    background-color: rgb(245, 222, 179);
+    text-align: center;
+    list-style-position: inside;
+}
+#peekaboo1 {
+    width: 290px;
+    height: 460px;
+    background-color: #8bff6d;
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 12s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+#peekaboo2  {
+
+    width: 90px;
+    height: 60px;
+    background-color: #8bff6d;
+    position: relative;
+    margin: auto;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 12s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color: #ff0c11; left:0px; top:0px;}
+    25%  {background-color:yellow; left:400px; top:0px;}
+    50%  {background-color:blue; left:400px; top:400px;}
+    75%  {background-color:green; left:0px; top:400px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:400px; top:0px;}
+    50%  {background-color:blue; left:400px; top:400px;}
+    75%  {background-color:green; left:0px; top:400px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+#hidden {
+    position: absolute;
+    left: 780px;
+    top: 250px;
+    z-index: -1;
 }
