@@ -1,4 +1,4 @@
-
+/*
 body{
     background-color: rgb(245, 222, 179);
     background-image: url("images/001-wood-melamine-subttle-pattern-background-pat.jpg");
@@ -7,18 +7,17 @@ body{
     text-align: center;
     list-style-position: inside;
 }
-
 #peekaboo1 {
-    width: 290px;
+    width: 370px;
     height: 460px;
     background-color: #8bff6d;
-    position: relative;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
--webkit-animation-duration: 12s; /* Chrome, Safari, Opera */
--webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-animation-name: example;
-animation-duration: 12s;
-animation-delay: 2s;
+    position: absolute;
+    -webkit-animation-name: example; /!* Chrome, Safari, Opera *!/
+    -webkit-animation-duration: 12s; /!* Chrome, Safari, Opera *!/
+    -webkit-animation-delay: 2s; /!* Chrome, Safari, Opera *!/
+    animation-name: example;
+    animation-duration: 12s;
+    animation-delay: 2s;
 }
 
 #peekaboo2  {
@@ -26,17 +25,16 @@ animation-delay: 2s;
     width: 90px;
     height: 60px;
     background-color: #8bff6d;
-    position: relative;
+    position: absolute;
     margin: auto;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 12s; /* Chrome, Safari, Opera */
-    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    -webkit-animation-name: example; /!* Chrome, Safari, Opera *!/
+    -webkit-animation-duration: 12s; /!* Chrome, Safari, Opera *!/
+    -webkit-animation-delay: 2s; /!* Chrome, Safari, Opera *!/
     animation-name: example;
     animation-duration: 12s;
     animation-delay: 2s;
 }
-
-
+/!* Chrome, Safari, Opera *!/
 @-webkit-keyframes example {
     0%   {background-color: #ff0c11; left:0px; top:0px;}
     25%  {background-color:yellow; left:400px; top:0px;}
@@ -45,7 +43,7 @@ animation-delay: 2s;
     100% {background-color:red; left:0px; top:0px;}
 }
 
-/* Standard syntax */
+/!* Standard syntax *!/
 @keyframes example {
     0%   {background-color:red; left:0px; top:0px;}
     25%  {background-color:yellow; left:400px; top:0px;}
@@ -53,7 +51,7 @@ animation-delay: 2s;
     75%  {background-color:green; left:0px; top:400px;}
     100% {background-color:red; left:0px; top:0px;}
 }
-
+/!*<!--change positon in #hidden from absolute to relative 9/19 0912-->*!/
 
 #hidden {
     position: absolute;
@@ -63,8 +61,5 @@ animation-delay: 2s;
 }
 
 details {
-    outline-width: 50%;
-}
-
-
-
+    outline-width: 50%;;
+}*/
